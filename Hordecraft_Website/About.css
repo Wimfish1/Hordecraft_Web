@@ -1,0 +1,260 @@
+/* Reset some basic elements */
+body, h1, h2, p, a, ul, li, nav, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Dark mode background and text colors */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height of the body to 100% of the viewport height */
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #1F1F1F;
+    padding: 20px;
+}
+
+header h1 {
+    color: #0D6EFD; /* Blue color */
+    display: inline;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline;
+    float: right;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E0E0E0;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #0D6EFD; /* Blue color */
+}
+
+.logo-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    color: royalblue;
+}
+
+a:hover {
+    color: rgb(25, 49, 121);
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    width: 200px; /* Adjust the width as needed */
+}
+
+h1 {
+    font-size: 2em;
+    margin: 20px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.news {
+    margin: 20px;
+    padding: 20px;
+    text-align: center; /* Center align the section content */
+}
+
+.news-box {
+    background-color: #1E1E1E;
+    border: 1px solid #333;
+    padding: 15px;
+    margin: 20px auto; /* Center each news box */
+    border-radius: 10px;
+    max-width: 100%; /* Adjust the maximum width */
+}
+
+.news-box h2 {
+    color: #0D6EFD; /* Blue color */
+}
+
+.news-box p {
+    color: #B0B0B0;
+}
+
+.news-box img {
+    max-width: 50%;
+    display: block;
+    margin: 10px auto; /* Center align the image */
+    border-radius: 10px;
+}
+
+.news-box .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0D6EFD; /* Blue color */
+    color: #121212;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.news-box .btn:hover {
+    background-color: #0A58CA; /* Darker blue */
+}
+
+.about {
+    margin: 20px;
+    padding: 20px;
+    text-align: center; /* Center align the section content */
+}
+
+.about-box {
+    background-color: #1E1E1E;
+    border: 1px solid #333;
+    padding: 15px;
+    margin: 20px auto; /* Center each about box */
+    border-radius: 10px;
+    max-width: 100%; /* Adjust the maximum width */
+}
+
+.about-box h2 {
+    color: #0D6EFD; /* Blue color */
+}
+
+.about-box p {
+    color: #B0B0B0;
+    margin: 10px 0; /* Add some margin between paragraphs */
+}
+
+/* Styling for the footer */
+footer {
+    background-color: #1F1F1F;
+    color: #E0E0E0;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto; /* Set margin-top to auto to push the footer to the bottom */
+}
+
+
+.about-box ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.about-box ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #131212;
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: #B0B0B0;
+}
+
+/* Responsive media queries */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    section.rules {
+        max-width: 90%;
+    }
+
+    section.rules ul li {
+        font-size: 1em;
+    }
+
+    /* Sliding menu styles */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        padding: 5px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .bar {
+        width: 100%;
+        height: 3px;
+        background-color: #E0E0E0;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #1F1F1F;
+        height: 100vh;
+        width: 50%; /* Adjust the width as needed */
+        padding: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .bar {
+        width: 25px;
+    }
+}

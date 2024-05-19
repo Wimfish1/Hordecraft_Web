@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hordecraft - About Me</title>
+    <link rel="stylesheet" href="About.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Hordecraft</h1>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/homepage">Homepage</a></li>
+                <li><a href="/About">About</a></li>
+                <li><a href="/Store">Store</a></li>
+                <li><a href="/Rules">Rules</a></li>
+                <li><a href="/Connect">Connect</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <div class="logo-container">
+        <img src="Hordecraft.png" alt="Logo not loaded" class="logo">
+    </div>
+    <h1>About Me & The server</h1>
+    <section class="about">
+        <div class="about-box">
+            <h2>Welcome!</h2>
+            <p>Hi, I'm Wimfish1, the creator and developer of Hordecraft. I have a passion for Development and have been part of the gaming community for years. The goal with Hordecraft was to create a fairly unique and enjoyable experience for players.</p>
+        </div>
+        <div class="about-box">
+            <h2>How It Started</h2>
+            <p>I've always been interested with development, starting at the age of 6 with Roblox Studio and progessing to HTML, CSS, JS along with Java, C# and other languages. Now that im older and have a source of income I decided i'd finally do something I've wanted to do since I was much younger, start a Minecraft server. I also wanted it to be unique so I decided to learn plugin development and thats how I got the idea of Hordecraft. Combining Rust like building systems, raiding with Minecraft graphics and Zombie apocalyse styled gameplay.</p>
+        </div>
+        <div class="about-box">
+            <h2>Contact Us</h2>
+            <p>If you have any questions feel free to contact us in the discord, twitter or youtube. Whether its just to chat, suggest new features or anything else.</p>
+            <p>Connect with me on:</p>
+            <p>
+                <a href="Twitter" class="btn">Twitter</a>
+                <a href="Discord" class="btn">Discord</a>
+                <a href="Youtube" class="btn">YouTube</a>
+            </p>
+        </div>
+    </section>
+    <footer>
+        &copy; Hordecraft 2024 | All rights reserved
+        <a href="Twitter">Twitter</a>
+        <a href="Discord">Discord</a>
+        <a href="Youtube">Youtube</a>
+    </footer>    
+    
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
