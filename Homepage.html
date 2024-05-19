@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hordecraft - Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Hordecraft</h1>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/homepage">Homepage</a></li>
+                <li><a href="/About">About</a></li>
+                <li><a href="/Store">Store</a></li>
+                <li><a href="/Rules">Rules</a></li>
+                <li><a href="/Connect">Connect</a></li>
+            </ul>
+        </nav> 
+    </header>    
+    <div class="logo-container">
+        <img src="Hordecraft.png" alt="Logo not loaded" class="logo">
+    </div>
+    <h1>Welcome to Hordecraft!</h1>
+    <p>A Minecraft apocalypse server developed by a dedicated developer called Wimfish1!</p>
+    <section class="news">
+        <h1>Weekly News</h1>
+        <div class="news-box">
+            <h2>Server In Development.</h2>
+            <p>Date</p>
+            <center><img src="Hordecraft.png" alt="Image failed to load">
+            <a href="" class="btn">Available after release.</a>
+        </div>
+    </section>
+    <footer>
+        &copy; Hordecraft 2024 | All rights reserved
+        <a href="Twitter">Twitter</a>
+        <a href="Discord">Discord</a>
+        <a href="Youtube">Youtube</a>
+    </footer> 
+
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

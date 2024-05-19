@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hordecraft - Connection Info</title>
+    <link rel="stylesheet" href="Rules.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Hordecraft</h1>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/homepage">Homepage</a></li>
+                <li><a href="/About">About</a></li>
+                <li><a href="/Store">Store</a></li>
+                <li><a href="/Rules">Rules</a></li>
+                <li><a href="/Connect">Connect</a></li>
+            </ul>
+        </nav>    
+    </header>
+    <h1>Connection Info</h1>
+    <section class="rules">
+        <h2>Connection Information</h2>
+        <ul>
+            <li>IP: N/A</li>
+            <li>Port: N/A</li>
+            <li>Server Status: <span class="Maintenance">In Development</span></li>
+        </ul>
+    </section>
+    <footer>
+        &copy; Hordecraft 2024 | All rights reserved
+        <a href="Twitter">Twitter</a>
+        <a href="Discord">Discord</a>
+        <a href="Youtube">Youtube</a>
+    </footer>  
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
